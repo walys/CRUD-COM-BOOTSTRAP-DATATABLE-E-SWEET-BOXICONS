@@ -1,0 +1,16 @@
+body{
+    background-color: #ffffff;
+}
+
+#formulario-pergunta{
+    margin-top: 5vh;
+}
+
+.walys{
+    background-color: white;
+    border-radius: 71%;
+    padding: 1%;
+}
+.my_div{
+    padding: 10px;
+}
