@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+        <div class="container my_div">
+            <a href="/create" class="btn btn-outline-primary"><i class='bx bxs-message-square-add bx-burst' ></i> </a>
+        </div>
+
+        <div class="container my_div">
+
+            <table class="table table table-bordered" id="table_user">
+                <thead class="thead-dark" align="center">
+                    <tr class="bg-primary text-white">
+                        <th scope="col">ID</th>
+                        <th scope="col">USUARIO</th>
+                        <th scope="col">ACESSO</th>
+                        <th scope="col">AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <% results.forEach((user) =>{ %>
+                    <tr>
+                        <td><%= user.id %></td>
+                        <td><%= user.users %></td>
+                        <td><%= user.rol %></td>
+                        <td>
+                            <a href="/edit/<%= user.id %>" class="btn btn-outline-warning"><i class='bx bxs-message-square-edit bx-burst' ></i> </a>
+                            <!--Usando o alerta do com Js puro-->
+                            <!--<a href="/delete/<%= user.id %>" onclick="return confirm('Deseja excluir esse usuario?');" class="btn btn-outline-danger"><i class='bx bxs-trash bx-burst' ></i> </a>-->
+                            <a onclick="confirm_delete('<%= user.id %> ',' <%= user.users %>');" class="btn btn-outline-danger"><i class='bx bxs-trash bx-burst' ></i> </a>
+                        </td>
+                    </tr>
+                    <% })%>
+                </tbody>
+            </table>
+
+        </div>
+ 
+
+    
+<%- include('partials/footer') %>

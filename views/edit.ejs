@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+    <div class="container my_div">
+        <div class="card">
+            <div class="card-header text-white bg-primary">
+                <i class='bx bxs-user-plus bx-burst' ></i> CADASTRO DE USUARIO
+            </div>
+            <div class="card-body">
+                <% if(user){ %>
+                <form action="/update" method="POST">
+                    <input type="hidden" id="id" name="id" value="<%= user.id %>">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nome do usuario</label>
+                      <input type="text" class="form-control" id="users" name="users" aria-describedby="emailHelp" value="<%= user.users %>">
+                      <small id="emailHelp" class="form-text text-muted">Caro usuario esse dado é muito importante.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputRol">Tipo de usuario</label>
+                      <select name="rol" id="rol" class="form-control" tabindex="2">
+                          <option <%= user.rol=='Admin' ? "selected" : '' %> value="Admin">Admin</option>
+                          <option <%= user.rol=='Master' ? "selected" : '' %> value="Master">Master</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btn_edit_user"><i class='bx bxs-save bx-burst' ></i> SALVAR</button>
+                    <a href="../" class="btn btn-secondary float-right"><i class='bx bxs-x-circle bx-burst' ></i> CANCELAR</a>
+                    
+                </form>
+                <% } %>
+            </div>
+          </div>
+    </div>    
+
+
+<%- include('partials/footer') %>
