@@ -1,6 +1,16 @@
 # CRUD-COM-BOOTSTRAP-DATATABLE-E-SWEET-BOXICONS
 CRUD NODE JS COM BOOTSTRAP DATATABLE E SWEET BOXICONS
 
+<div style="display: inline_block"><br>
+  <img align="center" alt="waly-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="waly-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="waly-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="waly-Bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+  <img align="center" alt="waly-node" height="100" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+  <img align="center" alt="waly-express" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+  <img align="center" alt="waly-mysql" height="80" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+</div>
+
 /******************************************************************************/
 
 Projeto inicial - Node JS que mostra um crud simples usando express.js, nodemon, sequelize.js, mysql2, mysql e o body-parser com uma comunicação muito simples com o mysql,
